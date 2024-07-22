@@ -19,6 +19,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+    - name: Call Python App Workflow
+      uses: aleneren/Python-application-challenge/.github/workflows/python-app.yml@main
     - name: Set up Python 3.10
       uses: actions/setup-python@v3
       with:
